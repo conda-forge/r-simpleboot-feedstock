@@ -1,4 +1,4 @@
-{% set version = '1.1-7' %}
+{% set version = "1.1-8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/simpleboot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/simpleboot/simpleboot_{{ version }}.tar.gz
-  sha256: e59482d0e33bf87ff156b04f9c6d6f9a2fcfd5a5fd5c944ada856734736dc91c
+  sha256: dd094737f679457282a121e3391fc89aca6db4c1822066a3e35f1f7aa7d4f8a2
 
 build:
-  merge_build_host: True  # [win]
-  number: 4
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
